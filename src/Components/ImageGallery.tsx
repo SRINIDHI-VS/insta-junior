@@ -28,7 +28,7 @@ const ImageGallery: React.FC = () => {
         const fetchImages = async () => {
             setIsLoading(true);
             try {
-                const imagesData: Image[] = Array.from({ length: 100 }, (_, i) => ({
+                const imagesData: Image[] = Array.from({ length: 50 }, (_, i) => ({
                     id: i,
                     url: `https://picsum.photos/800/600?random=${i}`,
                     likes: 0,

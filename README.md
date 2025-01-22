@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# InstaJunior
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+InstaJunior is a React application built with TypeScript and Vite. It allows users to register, log in, and view a gallery of images. Users can like images, add comments, and reply to comments.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication with Firebase
+- Image gallery with like functionality
+- Comment and reply system
+- Responsive design with Tailwind CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (>= 18.0)
+- Firebase account
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+git clone https://github.com/your-username/insta-junior.git
+cd insta-junior
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Install dependencies:
+
+npm install
+
+3. Configure Firebase:
+
+Update the Firebase configuration in firebaseConfig.ts with your Firebase project details.
+
+Running the Project
+To start the development server, run:
+
+npm run dev
+
+### Usage
+
+Authentication
+Users can register and log in using their email and password or their Google account. The authentication is handled by Firebase.
+
+Image Gallery
+The image gallery displays a list of images fetched from an external source. Users can like images, add comments, and reply to comments.
+
+### Components
+Login: Handles user login.
+Register: Handles user registration.
+ImageGallery: Displays the image gallery.
+ImageCard: Displays individual images with like and comment functionality.
+Loader: Displays a loading message while images are being fetched.
+
+### Preview/Demo Link
+
+Link - https://insta-junior.vercel.app/ 

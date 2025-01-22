@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword } from '../firebaseConfig';
+import { auth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword } from '../../services/firebaseConfig';
 
 const Register = () => {
     const [error, setError] = useState<string | null>(null);

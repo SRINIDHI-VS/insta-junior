@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth, signOut } from '../firebaseConfig';
-import ImageCard from '../Components/ImageCard';
-import Loader from '../Components/Loader';
+import { auth, signOut } from '../../services/firebaseConfig';
+import ImageCard from './ImageCard';
+import Loader from '../common/Loader';
 
 interface Comment {
     id: number;

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
-import Login from './Components/Login';
-import ImageGallery from './Components/ImageGallery';
-import Register from './Components/Register';
+import Login from './Components/pages/Login';
+import ImageGallery from './Components/features/ImageGallery';
+import Register from './Components/pages/Register';
 
 const App = () => {
   return (

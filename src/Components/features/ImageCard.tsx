@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Comment, Image } from '../types';
+import { Comment, Image } from '../../types/types';
 
 interface ImageCardProps {
     image: Image;

@@ -79,7 +79,7 @@ const ImageGallery: React.FC = () => {
 
     return (
         <div className="p-14 flex flex-col">
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-6 border rounded-lg shadow-2xl border-red-600 p-6 sticky top-4 bg-white">
                 <h1 className="text-3xl font-bold text-gray-800">Insta Junior</h1>
                 <h5 className="text-2xl font-bold text-red-500">
                     Welcome {JSON.parse(localStorage.getItem('user') || '{}').name || 'Guest'}
@@ -90,8 +90,9 @@ const ImageGallery: React.FC = () => {
                 >
                     Logout
                 </button>
-            </div>
 
+            </div>
+            <h1 className="text-3xl font-bold text-gray-800">Gallery Feed</h1>
             {isLoading ? (
                 <Loader />
             ) : (

@@ -80,7 +80,7 @@ const ImageGallery: React.FC = () => {
     return (
         <div className="p-14 flex flex-col">
             <div className="flex items-center justify-between mb-6">
-                <h1 className="text-3xl font-bold text-gray-800">Insta Juniorr</h1>
+                <h1 className="text-3xl font-bold text-gray-800">Insta Junior</h1>
                 <h5 className="text-2xl font-bold text-red-500">
                     Welcome {JSON.parse(localStorage.getItem('user') || '{}').name || 'Guest'}
                 </h5>

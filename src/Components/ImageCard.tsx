@@ -45,7 +45,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, liked, onLike }) => {
             <img src={image.url} alt="Image" className="w-full h-64 object-cover rounded-lg" />
             <button
                 onClick={() => onLike(image.id)}
-                className={`mt-3 bg-red-500 text-white p-2 rounded-full w-full ${liked ? 'bg-gray-500' : ''}`}
+                className={`mt-3 bg-red-500 text-white p-2 rounded-full w-full ${liked ? 'bg-gray-600' : ''}`}
             >
                 {liked ? `Unlike (${image.likes})` : `Like (${image.likes})`}
             </button>
